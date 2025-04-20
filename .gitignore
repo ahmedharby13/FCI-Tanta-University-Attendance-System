@@ -1,0 +1,27 @@
+# Node.js dependencies
+
+node_modules/ npm-debug.log yarn-error.log
+
+# Environment variables
+
+.env .env.local .env.development.local .env.test.local .env.production.local
+
+# Build output
+
+/dist /build
+
+# IDE and editor files
+
+.vscode/ .idea/ \*.suo *.ntvs*\*.njsproj \*.sln \*.swp
+
+# Logs
+
+logs/ \*.log
+
+# OS generated files
+
+.DS_Store Thumbs.db .DS_Store? .AppleDouble .LSOverride .Spotlight-V100 .Trashes .VolumeIcon.icns .DocumentRevisions-V100 .fseventsd
+# macOS Finder files
+.AppleDouble .LSOverride .Spotlight-V100 .Trashes .VolumeIcon.icns .DocumentRevisions-V100 .fseventsd
+# macOS system files
+.DS_Store .DS_Store? .AppleDouble .LSOverride .Spotlight-V100 .Trashes .VolumeIcon.icns .DocumentRevisions-V100 .fseventsd

@@ -1,0 +1,53 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/express-rate-limit": "^5.1.3",
+    "@types/helmet": "^0.0.48",
+    "@types/node": "^22.14.1",
+    "@types/node-cron": "^3.0.11",
+    "@types/nodemailer": "^6.4.17",
+    "@types/pdfkit": "^0.13.9",
+    "@types/qrcode": "^1.5.5",
+    "@types/uuid": "^10.0.0",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@fingerprintjs/fingerprintjs": "^4.6.2",
+    "@types/jsonwebtoken": "^8.5.9",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "geolib": "^3.3.4",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^8.13.2",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.10.1",
+    "pdfkit": "^0.17.0",
+    "qrcode": "^1.5.4",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0",
+    "zod": "^3.24.3"
+  }
+}

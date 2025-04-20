@@ -1,0 +1,1341 @@
+2025-04-15 00:16:18 error: Error: No token provided, Stack: Error: No token provided
+    at L:\college sys v2\backend\middlewares\auth.ts:22:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-15 00:25:42 error: Error: No user found with this email, Stack: Error: No user found with this email
+    at L:\college sys v2\backend\controllers\auth.ts:61:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 00:33:40 error: Error: User validation failed: studentId: Path `studentId` is required., Stack: ValidationError: User validation failed: studentId: Path `studentId` is required.
+    at model.Document.invalidate (L:\college sys v2\backend\node_modules\mongoose\lib\document.js:3351:32)
+    at L:\college sys v2\backend\node_modules\mongoose\lib\document.js:3112:17
+    at L:\college sys v2\backend\node_modules\mongoose\lib\schemaType.js:1407:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-04-15 00:35:44 error: Error: User validation failed: studentId: Path `studentId` is required., Stack: ValidationError: User validation failed: studentId: Path `studentId` is required.
+    at model.Document.invalidate (L:\college sys v2\backend\node_modules\mongoose\lib\document.js:3351:32)
+    at L:\college sys v2\backend\node_modules\mongoose\lib\document.js:3112:17
+    at L:\college sys v2\backend\node_modules\mongoose\lib\schemaType.js:1407:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-04-15 00:36:14 error: Error: User validation failed: studentId: Path `studentId` is required., Stack: ValidationError: User validation failed: studentId: Path `studentId` is required.
+    at model.Document.invalidate (L:\college sys v2\backend\node_modules\mongoose\lib\document.js:3351:32)
+    at L:\college sys v2\backend\node_modules\mongoose\lib\document.js:3112:17
+    at L:\college sys v2\backend\node_modules\mongoose\lib\schemaType.js:1407:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-04-15 01:00:31 error: Error: No token provided, Stack: Error: No token provided
+    at L:\college sys v2\backend\middlewares\auth.ts:22:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-15 01:09:59 error: Error: Invalid or expired QR code, Stack: Error: Invalid or expired QR code
+    at L:\college sys v2\backend\controllers\attendance.ts:19:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 01:10:44 error: Email sending failed: getaddrinfo ENOTFOUND smtp.example.com
+2025-04-15 01:10:44 error: Error: Failed to send reset email, Stack: Error: Failed to send reset email
+    at L:\college sys v2\backend\controllers\auth.ts:83:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 01:11:11 error: Error: Invalid or expired QR code, Stack: Error: Invalid or expired QR code
+    at L:\college sys v2\backend\controllers\attendance.ts:19:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 01:12:52 error: Error: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('67fd9456c66aac15894bc72d'), sectionNumber: 1 }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('67fd9456c66aac15894bc72d'), sectionNumber: 1 }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-15 01:15:34 error: Error: Invalid or expired QR code, Stack: Error: Invalid or expired QR code
+    at L:\college sys v2\backend\controllers\attendance.ts:19:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 01:15:56 error: Error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details., Stack: MongoServerError: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.
+    at Connection.sendCommand (L:\college sys v2\backend\node_modules\mongodb\src\cmap\connection.ts:550:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Connection.command (L:\college sys v2\backend\node_modules\mongodb\src\cmap\connection.ts:624:22)
+    at async Server.command (L:\college sys v2\backend\node_modules\mongodb\src\sdam\server.ts:338:21)
+    at async AggregateOperation.executeCommand (L:\college sys v2\backend\node_modules\mongodb\src\operations\command.ts:179:12)
+    at async AggregateOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\aggregate.ts:156:12)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async AggregationCursor._initialize (L:\college sys v2\backend\node_modules\mongodb\src\cursor\aggregation_cursor.ts:92:22)
+    at async AggregationCursor.cursorInit (L:\college sys v2\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:944:21)
+    at async AggregationCursor.fetchBatch (L:\college sys v2\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:982:7)
+    at async AggregationCursor.next (L:\college sys v2\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:612:9)
+    at async Collection.countDocuments (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:818:17)
+    at async model.Query.exec (L:\college sys v2\backend\node_modules\mongoose\lib\query.js:4456:63)
+    at async L:\college sys v2\backend\controllers\attendance.ts:22:26
+2025-04-15 01:16:13 error: Error: Invalid or expired QR code, Stack: Error: Invalid or expired QR code
+    at L:\college sys v2\backend\controllers\attendance.ts:19:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 01:17:38 error: Error: No token provided, Stack: Error: No token provided
+    at L:\college sys v2\backend\middlewares\auth.ts:22:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-15 01:18:57 error: Email sending failed: getaddrinfo ENOTFOUND smtp.example.com
+2025-04-15 01:18:57 error: Error: Failed to send reset email, Stack: Error: Failed to send reset email
+    at L:\college sys v2\backend\controllers\auth.ts:83:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 01:21:19 error: Error: Invalid or expired reset token, Stack: Error: Invalid or expired reset token
+    at L:\college sys v2\backend\controllers\auth.ts:95:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 01:22:37 error: Error: Invalid or expired reset token, Stack: Error: Invalid or expired reset token
+    at L:\college sys v2\backend\controllers\auth.ts:95:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 01:25:38 error: Token verification failed: JsonWebTokenError: jwt malformed
+2025-04-15 01:25:38 error: Error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:36:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-15 01:31:07 error: Email error: Error: getaddrinfo ENOTFOUND smtp.example.com
+2025-04-15 01:31:07 error: Error: Failed to send reset email, Stack: Error: Failed to send reset email
+    at L:\college sys v2\backend\controllers\auth.ts:83:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 01:38:27 error: Error: Invalid or expired reset token, Stack: Error: Invalid or expired reset token
+    at L:\college sys v2\backend\controllers\auth.ts:95:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 01:38:54 error: Error: Invalid or expired reset token, Stack: Error: Invalid or expired reset token
+    at L:\college sys v2\backend\controllers\auth.ts:95:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 12:02:46 error: Error: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('67fd9456c66aac15894bc72d'), sectionNumber: 1 }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('67fd9456c66aac15894bc72d'), sectionNumber: 1 }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-15 12:04:46 error: Error: Invalid or expired QR code, Stack: Error: Invalid or expired QR code
+    at L:\college sys v2\backend\controllers\attendance.ts:79:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 12:05:36 error: Error: Invalid or expired QR code, Stack: Error: Invalid or expired QR code
+    at L:\college sys v2\backend\controllers\attendance.ts:79:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 12:09:55 error: QR code not found or not active: code=67fe2f161f6961dc3285a246
+2025-04-15 12:09:55 error: Error: Invalid or expired QR code, Stack: Error: Invalid or expired QR code
+    at L:\college sys v2\backend\controllers\attendance.ts:84:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 12:10:12 error: Error: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('67fd9456c66aac15894bc72d'), sectionNumber: 2 }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('67fd9456c66aac15894bc72d'), sectionNumber: 2 }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-15 12:10:37 error: QR code not found or not active: code=67fe30890f9e26c7da95276b
+2025-04-15 12:10:37 error: Error: Invalid or expired QR code, Stack: Error: Invalid or expired QR code
+    at L:\college sys v2\backend\controllers\attendance.ts:84:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 12:11:15 error: Error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details., Stack: MongoServerError: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.
+    at Connection.sendCommand (L:\college sys v2\backend\node_modules\mongodb\src\cmap\connection.ts:550:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Connection.command (L:\college sys v2\backend\node_modules\mongodb\src\cmap\connection.ts:624:22)
+    at async Server.command (L:\college sys v2\backend\node_modules\mongodb\src\sdam\server.ts:338:21)
+    at async AggregateOperation.executeCommand (L:\college sys v2\backend\node_modules\mongodb\src\operations\command.ts:179:12)
+    at async AggregateOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\aggregate.ts:156:12)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async AggregationCursor._initialize (L:\college sys v2\backend\node_modules\mongodb\src\cursor\aggregation_cursor.ts:92:22)
+    at async AggregationCursor.cursorInit (L:\college sys v2\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:944:21)
+    at async AggregationCursor.fetchBatch (L:\college sys v2\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:982:7)
+    at async AggregationCursor.next (L:\college sys v2\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:612:9)
+    at async Collection.countDocuments (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:818:17)
+    at async model.Query.exec (L:\college sys v2\backend\node_modules\mongoose\lib\query.js:4456:63)
+    at async L:\college sys v2\backend\controllers\attendance.ts:93:26
+2025-04-15 12:11:36 error: QR code not found or not active: code=67fe30890f9e26c7da95276b
+2025-04-15 12:11:36 error: Error: Invalid or expired QR code, Stack: Error: Invalid or expired QR code
+    at L:\college sys v2\backend\controllers\attendance.ts:84:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 12:15:43 error: Error: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details., Stack: MongoServerError: $geoNear, $near, and $nearSphere are not allowed in this context, as these operators require sorting geospatial data. If you do not need sort, consider using $geoWithin instead. Check out https://dochub.mongodb.org/core/near-sort-operation and https://dochub.mongodb.org/core/nearSphere-sort-operationfor more details.
+    at Connection.sendCommand (L:\college sys v2\backend\node_modules\mongodb\src\cmap\connection.ts:550:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Connection.command (L:\college sys v2\backend\node_modules\mongodb\src\cmap\connection.ts:624:22)
+    at async Server.command (L:\college sys v2\backend\node_modules\mongodb\src\sdam\server.ts:338:21)
+    at async AggregateOperation.executeCommand (L:\college sys v2\backend\node_modules\mongodb\src\operations\command.ts:179:12)
+    at async AggregateOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\aggregate.ts:156:12)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async AggregationCursor._initialize (L:\college sys v2\backend\node_modules\mongodb\src\cursor\aggregation_cursor.ts:92:22)
+    at async AggregationCursor.cursorInit (L:\college sys v2\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:944:21)
+    at async AggregationCursor.fetchBatch (L:\college sys v2\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:982:7)
+    at async AggregationCursor.next (L:\college sys v2\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:612:9)
+    at async Collection.countDocuments (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:818:17)
+    at async model.Query.exec (L:\college sys v2\backend\node_modules\mongoose\lib\query.js:4456:63)
+    at async L:\college sys v2\backend\controllers\attendance.ts:93:26
+2025-04-15 12:21:22 error: Error: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('67fd9456c66aac15894bc72d'), sectionNumber: 3 }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('67fd9456c66aac15894bc72d'), sectionNumber: 3 }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-15 12:21:41 error: QR code not found or not active: code=67fe3327c6a9c2c97051302f
+2025-04-15 12:21:41 error: Error: Invalid or expired QR code, Stack: Error: Invalid or expired QR code
+    at L:\college sys v2\backend\controllers\attendance.ts:84:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 12:22:06 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-15 12:22:06 error: Error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:36:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-15 12:28:34 error: QR code not found or not active: code=6191cdbd-f6c2-4506-a8fe-2e85527b0b7c
+2025-04-15 12:28:34 error: Error: Invalid or expired QR code, Stack: Error: Invalid or expired QR code
+    at L:\college sys v2\backend\controllers\attendance.ts:114:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 12:28:45 error: Error: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('67fd9456c66aac15894bc72d'), sectionNumber: 4 }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('67fd9456c66aac15894bc72d'), sectionNumber: 4 }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-15 12:29:19 error: Attendance already recorded: studentId=67fd939dc66aac15894bc721, deviceId=device-uuid-123
+2025-04-15 12:29:19 error: Error: Attendance already recorded from this device, Stack: Error: Attendance already recorded from this device
+    at L:\college sys v2\backend\controllers\attendance.ts:163:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 12:32:38 error: QR code not found or not active: code=ecfd8797-55ef-49cb-a3a5-819387711baf
+2025-04-15 12:32:38 error: Error: Invalid or expired QR code, Stack: Error: Invalid or expired QR code
+    at L:\college sys v2\backend\controllers\attendance.ts:114:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 12:33:40 error: Attendance already recorded: studentId=67fd939dc66aac15894bc721, deviceId=device-uuid-1234
+2025-04-15 12:33:40 error: Error: Attendance already recorded from this device, Stack: Error: Attendance already recorded from this device
+    at L:\college sys v2\backend\controllers\attendance.ts:163:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 12:35:47 error: Error: Code validation failed: expiresAt: Cast to date failed for value "Invalid Date" (type Date) at path "expiresAt", Stack: ValidationError: Code validation failed: expiresAt: Cast to date failed for value "Invalid Date" (type Date) at path "expiresAt"
+    at model.Document.invalidate (L:\college sys v2\backend\node_modules\mongoose\lib\document.js:3351:32)
+    at model.$set (L:\college sys v2\backend\node_modules\mongoose\lib\document.js:1480:12)
+    at model.$set (L:\college sys v2\backend\node_modules\mongoose\lib\document.js:1132:16)
+    at model.Document (L:\college sys v2\backend\node_modules\mongoose\lib\document.js:178:12)
+    at model.Model (L:\college sys v2\backend\node_modules\mongoose\lib\model.js:128:12)
+    at new model (L:\college sys v2\backend\node_modules\mongoose\lib\model.js:4800:15)
+    at L:\college sys v2\backend\node_modules\mongoose\lib\model.js:2759:20
+    at Array.map (<anonymous>)
+    at Function.create (L:\college sys v2\backend\node_modules\mongoose\lib\model.js:2747:34)
+    at generateAndSaveQRCode (L:\college sys v2\backend\controllers\attendance.ts:31:29)
+    at L:\college sys v2\backend\controllers\attendance.ts:49:9
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 12:36:16 error: Error: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('67fd9456c66aac15894bc72d'), sectionNumber: 7 }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('67fd9456c66aac15894bc72d'), sectionNumber: 7 }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-15 12:36:24 error: Error: Code validation failed: expiresAt: Cast to date failed for value "Invalid Date" (type Date) at path "expiresAt", Stack: ValidationError: Code validation failed: expiresAt: Cast to date failed for value "Invalid Date" (type Date) at path "expiresAt"
+    at model.Document.invalidate (L:\college sys v2\backend\node_modules\mongoose\lib\document.js:3351:32)
+    at model.$set (L:\college sys v2\backend\node_modules\mongoose\lib\document.js:1480:12)
+    at model.$set (L:\college sys v2\backend\node_modules\mongoose\lib\document.js:1132:16)
+    at model.Document (L:\college sys v2\backend\node_modules\mongoose\lib\document.js:178:12)
+    at model.Model (L:\college sys v2\backend\node_modules\mongoose\lib\model.js:128:12)
+    at new model (L:\college sys v2\backend\node_modules\mongoose\lib\model.js:4800:15)
+    at L:\college sys v2\backend\node_modules\mongoose\lib\model.js:2759:20
+    at Array.map (<anonymous>)
+    at Function.create (L:\college sys v2\backend\node_modules\mongoose\lib\model.js:2747:34)
+    at generateAndSaveQRCode (L:\college sys v2\backend\controllers\attendance.ts:31:29)
+    at L:\college sys v2\backend\controllers\attendance.ts:49:9
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 13:41:45 error: Error: JWT_SECRET is not defined, Stack: Error: JWT_SECRET is not defined
+    at sendTokenResponse (L:\college sys v2\backend\controllers\auth.ts:68:11)
+    at L:\college sys v2\backend\controllers\auth.ts:42:3
+2025-04-15 13:48:10 error: Error: Internal server error, Stack: Error: Internal server error
+    at sendTokenResponse (L:\college sys v2\backend\controllers\auth.ts:68:11)
+    at L:\college sys v2\backend\controllers\auth.ts:42:3
+2025-04-15 13:51:53 error: Error: Internal server error, Stack: Error: Internal server error
+    at sendTokenResponse (L:\college sys v2\backend\controllers\auth.ts:68:11)
+    at L:\college sys v2\backend\controllers\auth.ts:42:3
+2025-04-15 13:52:04 error: Environment variable JWT_SECRET is missing
+2025-04-15 13:52:04 error: Error: Internal server error, Stack: Error: Internal server error
+    at L:\college sys v2\backend\middlewares\auth.ts:25:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-15 13:56:37 error: Error: Invalid credentials, Stack: Error: Invalid credentials
+    at L:\college sys v2\backend\controllers\auth.ts:39:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 13:57:10 error: Token verification failed: JsonWebTokenError: invalid token
+2025-04-15 13:57:10 error: Error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-15 13:57:19 error: Error: No token provided, Stack: Error: No token provided
+    at L:\college sys v2\backend\middlewares\auth.ts:19:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-15 13:59:15 error: Error: No token provided, Stack: Error: No token provided
+    at L:\college sys v2\backend\middlewares\auth.ts:19:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-15 14:03:55 error: Error: Invalid credentials, Stack: Error: Invalid credentials
+    at L:\college sys v2\backend\controllers\auth.ts:39:11
+2025-04-15 14:04:10 error: Error: Invalid credentials, Stack: Error: Invalid credentials
+    at L:\college sys v2\backend\controllers\auth.ts:39:11
+2025-04-15 14:15:40 error: Error: Only admins or instructors can create student accounts, Stack: Error: Only admins or instructors can create student accounts
+    at L:\college sys v2\backend\controllers\auth.ts:24:13
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 14:15:58 error: Error: Only admins or instructors can create student accounts, Stack: Error: Only admins or instructors can create student accounts
+    at L:\college sys v2\backend\controllers\auth.ts:24:13
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 14:18:20 error: Error: Only admins or instructors can create student accounts, Stack: Error: Only admins or instructors can create student accounts
+    at L:\college sys v2\backend\controllers\auth.ts:24:13
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 14:20:11 error: Error: Only admins or instructors can create student accounts, Stack: Error: Only admins or instructors can create student accounts
+    at L:\college sys v2\backend\controllers\auth.ts:24:13
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 14:20:14 error: Error: Only admins or instructors can create student accounts, Stack: Error: Only admins or instructors can create student accounts
+    at L:\college sys v2\backend\controllers\auth.ts:24:13
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 14:20:19 error: Error: Only admins or instructors can create student accounts, Stack: Error: Only admins or instructors can create student accounts
+    at L:\college sys v2\backend\controllers\auth.ts:24:13
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 20:52:05 error: Error: E11000 duplicate key error collection: university-attendance.users index: studentId_1 dup key: { studentId: null }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.users index: studentId_1 dup key: { studentId: null }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-15 20:52:41 error: Error: E11000 duplicate key error collection: university-attendance.users index: studentId_1 dup key: { studentId: null }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.users index: studentId_1 dup key: { studentId: null }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-15 20:52:42 error: Error: E11000 duplicate key error collection: university-attendance.users index: studentId_1 dup key: { studentId: null }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.users index: studentId_1 dup key: { studentId: null }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-15 20:58:55 error: Error: Code validation failed: expiresAt: Cast to date failed for value "Invalid Date" (type Date) at path "expiresAt", Stack: ValidationError: Code validation failed: expiresAt: Cast to date failed for value "Invalid Date" (type Date) at path "expiresAt"
+    at model.Document.invalidate (L:\college sys v2\backend\node_modules\mongoose\lib\document.js:3351:32)
+    at model.$set (L:\college sys v2\backend\node_modules\mongoose\lib\document.js:1480:12)
+    at model.$set (L:\college sys v2\backend\node_modules\mongoose\lib\document.js:1132:16)
+    at model.Document (L:\college sys v2\backend\node_modules\mongoose\lib\document.js:178:12)
+    at model.Model (L:\college sys v2\backend\node_modules\mongoose\lib\model.js:128:12)
+    at new model (L:\college sys v2\backend\node_modules\mongoose\lib\model.js:4800:15)
+    at L:\college sys v2\backend\node_modules\mongoose\lib\model.js:2759:20
+    at Array.map (<anonymous>)
+    at Function.create (L:\college sys v2\backend\node_modules\mongoose\lib\model.js:2747:34)
+    at generateAndSaveQRCode (L:\college sys v2\backend\controllers\attendance.ts:36:26)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async L:\college sys v2\backend\controllers\attendance.ts:54:3
+2025-04-15 21:24:20 error: Error: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('67feabe5fec095c219fbd00c'), sectionNumber: 1 }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('67feabe5fec095c219fbd00c'), sectionNumber: 1 }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-15 21:25:41 error: Invalid or expired QR code: code=9517e057-5ce8-45e0-89f3-02e301fd8b6c
+2025-04-15 21:25:41 error: Error: Invalid or expired QR code, Stack: Error: Invalid or expired QR code
+    at L:\college sys v2\backend\controllers\attendance.ts:121:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 21:31:33 error: Error: Unauthorized: You can only close your own sections, Stack: Error: Unauthorized: You can only close your own sections
+    at L:\college sys v2\backend\controllers\attendance.ts:90:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 21:32:31 error: Error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 21:32:56 error: Error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 21:33:33 error: Error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 21:45:07 error: Error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-15 21:49:31 error: Error: No token provided, Stack: Error: No token provided
+    at L:\college sys v2\backend\middlewares\auth.ts:19:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-16 12:38:11 error: Error: Invalid format. Use "excel" or "pdf", Stack: Error: Invalid format. Use "excel" or "pdf"
+    at L:\college sys v2\backend\controllers\export.ts:67:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-17 16:34:54 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-17 16:34:54 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-17 16:35:41 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-17 16:35:41 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-17 16:42:31 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-17 16:42:31 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-17 16:42:48 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-17 16:42:48 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-17 16:43:03 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-17 16:43:03 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-17 16:43:18 error: Unexpected error: Cast to ObjectId failed for value "67fe500fc07316e9f5b3655d9" (type string) at path "_id" for model "User", Stack: CastError: Cast to ObjectId failed for value "67fe500fc07316e9f5b3655d9" (type string) at path "_id" for model "User"
+    at SchemaObjectId.cast (L:\college sys v2\backend\node_modules\mongoose\lib\schema\objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (L:\college sys v2\backend\node_modules\mongoose\lib\schemaType.js:1255:12)
+    at SchemaObjectId.SchemaType.castForQuery (L:\college sys v2\backend\node_modules\mongoose\lib\schemaType.js:1673:17)
+    at L:\college sys v2\backend\node_modules\mongoose\lib\schemaType.js:1634:18
+    at Array.map (<anonymous>)
+    at SchemaObjectId.handle$in (L:\college sys v2\backend\node_modules\mongoose\lib\schemaType.js:1630:14)
+    at SchemaObjectId.SchemaType.castForQuery (L:\college sys v2\backend\node_modules\mongoose\lib\schemaType.js:1669:20)
+    at cast (L:\college sys v2\backend\node_modules\mongoose\lib\cast.js:367:39)
+    at model.Query.Query.cast (L:\college sys v2\backend\node_modules\mongoose\lib\query.js:4907:12)
+    at model.Query.Query._castConditions (L:\college sys v2\backend\node_modules\mongoose\lib\query.js:2325:10)
+    at model.Query._find (L:\college sys v2\backend\node_modules\mongoose\lib\query.js:2352:8)
+    at model.Query.exec (L:\college sys v2\backend\node_modules\mongoose\lib\query.js:4456:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async L:\college sys v2\backend\controllers\class.ts:43:20
+2025-04-17 16:43:29 error: Unexpected error: Cast to ObjectId failed for value "12345" (type string) at path "_id" for model "User", Stack: CastError: Cast to ObjectId failed for value "12345" (type string) at path "_id" for model "User"
+    at SchemaObjectId.cast (L:\college sys v2\backend\node_modules\mongoose\lib\schema\objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (L:\college sys v2\backend\node_modules\mongoose\lib\schemaType.js:1255:12)
+    at SchemaObjectId.SchemaType.castForQuery (L:\college sys v2\backend\node_modules\mongoose\lib\schemaType.js:1673:17)
+    at L:\college sys v2\backend\node_modules\mongoose\lib\schemaType.js:1634:18
+    at Array.map (<anonymous>)
+    at SchemaObjectId.handle$in (L:\college sys v2\backend\node_modules\mongoose\lib\schemaType.js:1630:14)
+    at SchemaObjectId.SchemaType.castForQuery (L:\college sys v2\backend\node_modules\mongoose\lib\schemaType.js:1669:20)
+    at cast (L:\college sys v2\backend\node_modules\mongoose\lib\cast.js:367:39)
+    at model.Query.Query.cast (L:\college sys v2\backend\node_modules\mongoose\lib\query.js:4907:12)
+    at model.Query.Query._castConditions (L:\college sys v2\backend\node_modules\mongoose\lib\query.js:2325:10)
+    at model.Query._find (L:\college sys v2\backend\node_modules\mongoose\lib\query.js:2352:8)
+    at model.Query.exec (L:\college sys v2\backend\node_modules\mongoose\lib\query.js:4456:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async L:\college sys v2\backend\controllers\class.ts:43:20
+2025-04-18 15:14:05 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-18 15:14:05 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-18 15:18:17 error: Operational Error: Some students not found or are not valid students, Status: 400
+2025-04-18 15:18:58 error: Operational Error: All provided students are already enrolled, Status: 400
+2025-04-18 15:36:08 error: Operational Error: Only admins can update student information, Status: 403
+2025-04-18 15:36:51 error: Operational Error: Student not found or is not a valid student, Status: 404
+2025-04-18 15:58:35 error: Unexpected error: Validation failed: Invalid enum value. Expected 'active' | 'ended', received 'Ended', Stack: Error: Validation failed: Invalid enum value. Expected 'active' | 'ended', received 'Ended'
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-18 15:59:11 error: Unexpected error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-18 15:59:35 error: Unexpected error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-18 16:29:46 error: Operational Error: You can only update your own classes, Status: 403
+2025-04-18 17:04:10 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-18 17:04:10 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-18 17:27:32 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-18 17:27:32 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-18 17:28:50 error: Unexpected error: No token provided, Stack: Error: No token provided
+    at L:\college sys v2\backend\middlewares\auth.ts:19:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-18 17:31:59 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-18 17:31:59 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-18 17:32:07 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-18 17:32:07 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-18 17:32:23 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-18 17:32:23 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-18 17:32:25 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-18 17:32:25 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-19 14:23:09 error: Unexpected error: Email already registered, Stack: Error: Email already registered
+    at L:\college sys v2\backend\controllers\auth.ts:16:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-19 14:25:52 error: Operational Error: You can only create classes for yourself, Status: 403
+2025-04-19 14:27:37 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-19 14:27:37 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-19 14:27:50 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-19 14:27:50 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-19 14:28:03 error: Operational Error: Some students not found or are not valid students, Status: 400
+2025-04-19 14:28:45 error: Operational Error: You can only remove students from your own classes, Status: 403
+2025-04-19 14:29:00 error: Operational Error: All provided students are already enrolled, Status: 400
+2025-04-19 14:32:52 error: Unexpected error: Invalid credentials, Stack: Error: Invalid credentials
+    at L:\college sys v2\backend\controllers\auth.ts:82:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-19 16:42:47 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-19 16:42:47 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\controllers\auth.ts:51:13
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-19 16:42:57 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-19 16:42:57 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\controllers\auth.ts:51:13
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-19 16:44:46 error: Unexpected error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-19 16:44:58 error: Operational Error: Student not enrolled in this class, Status: 403
+2025-04-19 16:45:09 error: Operational Error: Student not enrolled in this class, Status: 403
+2025-04-19 17:19:14 error: Operational Error: Student not enrolled in this class, Status: 403
+2025-04-19 17:19:52 error: Operational Error: Student not enrolled in this class, Status: 403
+2025-04-19 18:01:52 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-19 18:01:52 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-19 18:29:18 error: Unexpected error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-19 18:30:33 error: Unexpected error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-19 18:31:49 error: Unexpected error: Validation failed: Required, Required, Required, Required, Stack: Error: Validation failed: Required, Required, Required, Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-19 19:27:43 error: Unexpected error: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('6803966dd089baa99ace2539'), sectionNumber: 2 }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('6803966dd089baa99ace2539'), sectionNumber: 2 }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-19 19:28:01 error: Unexpected error: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('6803966dd089baa99ace2539'), sectionNumber: 2 }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('6803966dd089baa99ace2539'), sectionNumber: 2 }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-19 19:53:04 error: Operational Error: Section already active for this class, day, and number, Status: 400
+2025-04-19 20:05:04 error: Unexpected error: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('68039595d089baa99ace252e'), sectionId: ObjectId('68039c52a8de6ee581824ffc'), deviceInfo.deviceId: null }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('68039595d089baa99ace252e'), sectionId: ObjectId('68039c52a8de6ee581824ffc'), deviceInfo.deviceId: null }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-19 20:05:26 error: Duplicate attendance: studentId=68039595d089baa99ace252e, fingerprint=abc123fingerprint
+2025-04-19 20:05:26 error: Operational Error: Attendance already recorded from this browser, Status: 400
+2025-04-19 20:05:33 error: Unexpected error: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('68039595d089baa99ace252e'), sectionId: ObjectId('68039c52a8de6ee581824ffc'), deviceInfo.deviceId: null }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('68039595d089baa99ace252e'), sectionId: ObjectId('68039c52a8de6ee581824ffc'), deviceInfo.deviceId: null }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-19 20:10:48 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-19 20:10:48 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-19 20:14:45 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-19 20:14:45 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-19 20:34:40 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-19 20:34:40 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-19 20:35:15 error: Unexpected error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-19 20:35:24 error: Unexpected error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-19 21:11:32 error: Operational Error: You can only create classes for yourself, Status: 403
+2025-04-20 14:45:17 error: Operational Error: Class not found, Status: 404
+2025-04-20 14:56:14 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-20 14:59:26 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-20 14:59:26 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-20 14:59:49 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-20 14:59:49 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-20 15:00:02 error: Unexpected error: Validation failed: Expected string, received array, Stack: Error: Validation failed: Expected string, received array
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-20 15:00:24 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-20 15:05:48 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-20 15:07:04 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-20 15:07:04 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-20 15:07:45 error: Operational Error: All provided students are already in the section, Status: 400
+2025-04-20 15:11:49 error: Operational Error: Students with IDs STU123456, STU1234567 are already in other sections of this class, Status: 400
+2025-04-20 15:30:07 error: Invalid or expired QR code: code=1c54c90c-f347-4ec8-b6b8-b0f5f60bd838
+2025-04-20 15:30:07 error: Operational Error: Invalid or expired QR code, Status: 400
+2025-04-20 15:30:12 error: Invalid or expired QR code: code=a94a3372-4b5d-48f4-8bd9-b201c24acff3
+2025-04-20 15:30:12 error: Operational Error: Invalid or expired QR code, Status: 400
+2025-04-20 15:30:55 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-20 15:30:55 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-20 15:32:06 error: Unexpected error: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('6803f5862941b22279ed9526'), sectionNumber: 2 }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.sections index: classId_1_sectionNumber_1 dup key: { classId: ObjectId('6803f5862941b22279ed9526'), sectionNumber: 2 }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-20 15:32:46 error: Unexpected error: Cannot merge already merged cells, Stack: Error: Cannot merge already merged cells
+    at L:\college sys v2\backend\node_modules\exceljs\lib\doc\worksheet.js:616:15
+    at L:\college sys v2\backend\node_modules\exceljs\lib\utils\under-dash.js:10:11
+    at Array.forEach (<anonymous>)
+    at Object.each (L:\college sys v2\backend\node_modules\exceljs\lib\utils\under-dash.js:9:26)
+    at Worksheet._mergeCellsInternal (L:\college sys v2\backend\node_modules\exceljs\lib\doc\worksheet.js:614:7)
+    at Worksheet.mergeCells (L:\college sys v2\backend\node_modules\exceljs\lib\doc\worksheet.js:604:10)
+    at L:\college sys v2\backend\controllers\export.ts:103:13
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-20 18:53:52 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-20 18:53:52 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-20 18:54:37 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-20 18:54:37 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-20 18:55:33 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-20 18:55:33 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-20 18:55:41 error: Operational Error: A section with this number already exists in the class, Status: 400
+2025-04-20 19:02:30 error: Operational Error: A section with this number already exists in the class, Status: 400
+2025-04-20 19:02:59 error: Operational Error: A section with this number already exists in the class, Status: 400
+2025-04-20 19:06:10 error: Operational Error: Some students are not enrolled in this class, Status: 403
+2025-04-20 19:24:31 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-20 19:25:13 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-20 19:28:54 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-20 19:31:32 error: Operational Error: Section not found, Status: 404
+2025-04-20 19:31:39 error: Operational Error: Section not found, Status: 404
+2025-04-20 19:36:51 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-20 19:39:07 error: Unexpected error: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('6803956dd089baa99ace252a'), sectionId: ObjectId('680529495a5d043408fab063'), deviceInfo.deviceId: null }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('6803956dd089baa99ace252a'), sectionId: ObjectId('680529495a5d043408fab063'), deviceInfo.deviceId: null }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-20 19:39:25 error: Unexpected error: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('6803956dd089baa99ace252a'), sectionId: ObjectId('680529495a5d043408fab063'), deviceInfo.deviceId: null }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('6803956dd089baa99ace252a'), sectionId: ObjectId('680529495a5d043408fab063'), deviceInfo.deviceId: null }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-20 19:47:27 error: Unexpected error: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('680395a4d089baa99ace2532'), sectionId: ObjectId('6805305d3fdabf23e25e723b'), deviceInfo.deviceId: null }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('680395a4d089baa99ace2532'), sectionId: ObjectId('6805305d3fdabf23e25e723b'), deviceInfo.deviceId: null }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-20 19:59:52 error: Unexpected error: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('680395a4d089baa99ace2532'), sectionId: ObjectId('6805305d3fdabf23e25e723b'), deviceInfo.deviceId: null }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('680395a4d089baa99ace2532'), sectionId: ObjectId('6805305d3fdabf23e25e723b'), deviceInfo.deviceId: null }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-20 20:05:32 error: Invalid or expired QR code: code=df62e3e1-8fbf-4f7e-ac02-121914924283
+2025-04-20 20:05:32 error: Operational Error: Invalid or expired QR code, Status: 400
+2025-04-20 20:05:43 error: Unexpected error: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('680395a4d089baa99ace2532'), sectionId: ObjectId('6805305d3fdabf23e25e723b'), deviceInfo.deviceId: null }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('680395a4d089baa99ace2532'), sectionId: ObjectId('6805305d3fdabf23e25e723b'), deviceInfo.deviceId: null }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-20 20:14:03 error: Invalid or expired QR code: code=a63c1a0d-6e22-46d1-a530-5edba619b64a
+2025-04-20 20:14:03 error: Operational Error: Invalid or expired QR code, Status: 400
+2025-04-20 20:14:16 error: Unexpected error: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('680395a4d089baa99ace2532'), sectionId: ObjectId('6805305d3fdabf23e25e723b'), deviceInfo.deviceId: null }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('680395a4d089baa99ace2532'), sectionId: ObjectId('6805305d3fdabf23e25e723b'), deviceInfo.deviceId: null }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-20 20:18:23 error: Unexpected error: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('680395a4d089baa99ace2532'), sectionId: ObjectId('6805305d3fdabf23e25e723b'), deviceInfo.deviceId: null }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('680395a4d089baa99ace2532'), sectionId: ObjectId('6805305d3fdabf23e25e723b'), deviceInfo.deviceId: null }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-20 20:31:11 error: Unexpected error: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('680395a4d089baa99ace2532'), sectionId: ObjectId('6805305d3fdabf23e25e723b'), deviceInfo.deviceId: null }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.deviceId_1 dup key: { studentId: ObjectId('680395a4d089baa99ace2532'), sectionId: ObjectId('6805305d3fdabf23e25e723b'), deviceInfo.deviceId: null }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-20 20:44:43 error: Unexpected error: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.fingerprint_1 dup key: { studentId: ObjectId('680395a4d089baa99ace2532'), sectionId: ObjectId('6805305d3fdabf23e25e723b'), deviceInfo.fingerprint: "abc123fingerprint78" }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_deviceInfo.fingerprint_1 dup key: { studentId: ObjectId('680395a4d089baa99ace2532'), sectionId: ObjectId('6805305d3fdabf23e25e723b'), deviceInfo.fingerprint: "abc123fingerprint78" }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-20 20:56:42 error: Operational Error: Class not found, Status: 404
+2025-04-20 20:56:51 error: Operational Error: Class not found, Status: 404
+2025-04-20 20:57:08 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-20 20:57:13 error: Operational Error: Class not found, Status: 404
+2025-04-20 20:58:08 error: Student not in section: studentId=680395a4d089baa99ace2532, sectionId=680542eb0b7d8e701bc7eb88
+2025-04-20 20:58:08 error: Operational Error: This is not your assigned section, Status: 403
+2025-04-20 21:27:21 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-20 21:28:32 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-20 21:34:12 error: Unexpected error: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_dayNumber_1 dup key: { studentId: ObjectId('6803956dd089baa99ace252a'), sectionId: ObjectId('680542f20b7d8e701bc7eb8d'), dayNumber: 1 }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_dayNumber_1 dup key: { studentId: ObjectId('6803956dd089baa99ace252a'), sectionId: ObjectId('680542f20b7d8e701bc7eb8d'), dayNumber: 1 }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-20 21:34:23 error: Unexpected error: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_dayNumber_1 dup key: { studentId: ObjectId('6803956dd089baa99ace252a'), sectionId: ObjectId('680542f20b7d8e701bc7eb8d'), dayNumber: 2 }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_dayNumber_1 dup key: { studentId: ObjectId('6803956dd089baa99ace252a'), sectionId: ObjectId('680542f20b7d8e701bc7eb8d'), dayNumber: 2 }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-20 21:34:58 error: Unexpected error: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_dayNumber_1 dup key: { studentId: ObjectId('6803956dd089baa99ace252a'), sectionId: ObjectId('680542f20b7d8e701bc7eb8d'), dayNumber: 2 }, Stack: MongoServerError: E11000 duplicate key error collection: university-attendance.attendances index: studentId_1_sectionId_1_dayNumber_1 dup key: { studentId: ObjectId('6803956dd089baa99ace252a'), sectionId: ObjectId('680542f20b7d8e701bc7eb8d'), dayNumber: 2 }
+    at InsertOneOperation.execute (L:\college sys v2\backend\node_modules\mongodb\src\operations\insert.ts:88:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:283:14)
+    at async executeOperation (L:\college sys v2\backend\node_modules\mongodb\src\operations\execute_operation.ts:115:12)
+    at async Collection.insertOne (L:\college sys v2\backend\node_modules\mongodb\src\collection.ts:285:12)
+2025-04-20 21:38:27 error: Operational Error: Attendance already recorded for this student in this section on this day, Status: 400
+2025-04-20 21:45:21 error: Operational Error: Class ID is required, Status: 400
+2025-04-20 21:47:05 error: Operational Error: Class ID is required, Status: 400
+2025-04-20 21:47:51 error: Operational Error: Class ID is required, Status: 400
+2025-04-20 21:52:43 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-20 23:01:47 error: Invalid or expired QR code: code=031d5b30-40d7-472d-ba26-bbc6acbfed49
+2025-04-20 23:01:47 error: Operational Error: Invalid or expired QR code, Status: 400
