@@ -72,21 +72,56 @@ export const exportAttendance = asyncHandler(async (req: AuthRequest, res: Respo
     classId,
     sectionId: { $in: sectionIds },
   });
-  uniqueDays.sort((a: number, b: number) => a - b);
-
+  uniqueDays.sort((a: number, b: number) => a - b); // Sort days
   if (!uniqueDays.length) {
     uniqueDays.push(1);
     logger.warn(`No attendance days found for classId=${classId}, sectionId=${sectionId || 'N/A'}, defaulting to Day 1`);
   }
 
-  // Fetch raw attendance records
-  const attendanceRecords = await Attendance.find({
-    classId,
-    sectionId: { $in: sectionIds },
-  })
-    .populate<{ studentId: Student }>('studentId', 'name email studentId')
-    .exec() as AttendanceDocument[];
-  
+  // Aggregate attendance statistics (similar to getAttendanceStatistics)
+  const attendanceStats = await Attendance.aggregate([
+    { $match: { classId: classDoc._id } },
+    {
+      $lookup: {
+        from: 'sections',
+        localField: 'sectionId',
+        foreignField: '_id',
+        as: 'section',
+      },
+    },
+    { $unwind: '$section' },
+    {
+      $match: {
+        $expr: {
+          $in: ['$studentId', '$section.students'],
+        },
+      },
+    },
+    {
+      $group: {
+        _id: { studentId: '$studentId', sectionId: '$sectionId', dayNumber: '$dayNumber' },
+        status: { $first: '$status' },
+      },
+    },
+    {
+      $group: {
+        _id: '$_id.studentId',
+        sectionsAttended: {
+          $push: {
+            sectionId: '$_id.sectionId',
+            dayNumber: '$_id.dayNumber',
+            status: '$status',
+          },
+        },
+        totalAttended: {
+          $sum: { $cond: [{ $eq: ['$status', 'present'] }, 1, 0] },
+        },
+        totalLate: {
+          $sum: { $cond: [{ $eq: ['$status', 'late'] }, 1, 0] },
+        },
+      },
+    },
+  ]);
 
   // Create workbook and worksheet
   const workbook = new ExcelJS.Workbook();
@@ -113,7 +148,7 @@ export const exportAttendance = asyncHandler(async (req: AuthRequest, res: Respo
     'Section Number',
     ...uniqueDays.map((day) => `Day ${day}`),
     'Total',
-    'Attendance %', // New column
+    'Attendance %',
   ];
   worksheet.getRow(2).values = headers;
   worksheet.getRow(2).font = { bold: true };
@@ -127,7 +162,7 @@ export const exportAttendance = asyncHandler(async (req: AuthRequest, res: Respo
     { key: 'sectionNumber', width: 15 },
     ...uniqueDays.map(() => ({ width: 10 })),
     { key: 'total', width: 10 },
-    { key: 'attendancePercentage', width: 12 }, // New column width
+    { key: 'attendancePercentage', width: 12 },
   ];
 
   // Add student data
@@ -139,50 +174,59 @@ export const exportAttendance = asyncHandler(async (req: AuthRequest, res: Respo
         s.students?.some((id) => id.toString() === student._id.toString())
       );
 
-      // Filter attendance records for the student
-      const studentAttendance = attendanceRecords.filter(
-        (record) => record.studentId._id.toString() === student._id.toString()
-      );
-
-      // Calculate total (present + late)
-      const totalAttended = studentAttendance.filter((a) => a.status === 'present').length;
-      const totalLate = studentAttendance.filter((a) => a.status === 'late').length;
+      // Get attendance stats for the student
+      const studentStats = attendanceStats.find((stat) => stat._id.toString() === student._id.toString());
+      const attendedSections = studentStats ? studentStats.sectionsAttended : [];
+      const totalAttended = studentStats ? studentStats.totalAttended : 0;
+      const totalLate = studentStats ? studentStats.totalLate : 0;
       const totalSections = totalAttended + totalLate;
 
-      // Calculate attendance percentage
+      // Calculate total possible sessions and attendance percentage
       const totalPossibleSessions = studentSections.length * uniqueDays.length;
       const attendancePercentage = totalPossibleSessions > 0
         ? ((totalSections / totalPossibleSessions) * 100).toFixed(2)
         : '0.00';
 
       const row: any = {
-        studentId: student.studentId, // Unified with studentId
+        studentId: student.studentId,
         name: student.name,
         email: student.email,
         sectionNumber: studentSections.length > 0 ? studentSections[0].sectionNumber : 'N/A',
         total: totalSections,
-        attendancePercentage, // New field
+        attendancePercentage,
       };
 
       // Add attendance status for each day
+      const sectionAttendance = studentSections.map((section) => {
+        const sectionDays = attendedSections.filter((att: any) => String(att.sectionId) === String(section._id));
+        return {
+          sectionNumber: section.sectionNumber,
+          days: uniqueDays.map((day) => {
+            const attendance = sectionDays.find((att: any) => String(att.dayNumber) === String(day));
+            return {
+              dayNumber: day,
+              status: attendance
+                ? attendance.status === 'present'
+                  ? 'P'
+                  : attendance.status === 'late'
+                  ? 'L'
+                  : ''
+                : '',
+            };
+          }),
+        };
+      });
+
+      // Populate day columns in the row
       uniqueDays.forEach((day) => {
         const columnKey = `day_${day}`;
         if (studentSections.length === 0) {
           row[columnKey] = '-'; // No section assignment
         } else {
-          // Find attendance record for the day in any of the student's sections
-          const attendance = studentAttendance.find(
-            (a) =>
-              a.dayNumber === day &&
-              studentSections.some((s) => s._id.toString() === a.sectionId.toString())
-          );
-          row[columnKey] = attendance
-            ? attendance.status === 'present'
-              ? 'P'
-              : attendance.status === 'late'
-              ? 'L'
-              : '' // Absent or other status
-            : ''; // No record found (assume absent)
+          // Find the attendance status for the day in any of the student's sections
+          const sectionDays = sectionAttendance.flatMap((sa) => sa.days);
+          const attendance = sectionDays.find((d) => d.dayNumber === day);
+          row[columnKey] = attendance ? attendance.status : '';
         }
       });
 

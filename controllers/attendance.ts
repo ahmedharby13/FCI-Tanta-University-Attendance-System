@@ -238,7 +238,7 @@ export const getAttendanceStatistics = asyncHandler(async (req: AuthRequest, res
   const attendanceDays = await Attendance.distinct('dayNumber', {
     classId,
     sectionId: { $in: sections.map((s) => s._id) },
-  });
+  }).sort({ dayNumber: 1 }); // Ensure days are sorted in ascending order
 
   const statistics = await Promise.all(
     classDoc.students.map(async (student: any) => {
@@ -257,7 +257,7 @@ export const getAttendanceStatistics = asyncHandler(async (req: AuthRequest, res
       const totalAbsent = studentStats ? studentStats.totalAbsent : 0;
       const totalLate = studentStats ? studentStats.totalLate : 0;
 
-      // Define totalSections as totalAttended + totalLate (per your requirement)
+      // Define totalSections as totalAttended + totalLate
       const totalSections = totalAttended + totalLate;
 
       // Calculate attendance percentage based on total possible sessions
@@ -270,13 +270,19 @@ export const getAttendanceStatistics = asyncHandler(async (req: AuthRequest, res
         const sectionDays = attendedSections.filter((att: any) => String(att.sectionId) === String(section._id));
         return {
           sectionNumber: section.sectionNumber,
+          // Format days to match Excel output ("P", "L", or "")
           days: attendanceDays.map((day) => {
-            const attendance = sectionDays.find((att: any) => att.dayNumber === day);
+            const attendance = sectionDays.find((att: any) => String(att.dayNumber) === String(day)); // Fix type mismatch
+            const status = attendance
+              ? attendance.status === 'present'
+                ? 'P'
+                : attendance.status === 'late'
+                ? 'L'
+                : ''
+              : '';
             return {
               dayNumber: day,
-              attended: attendance ? attendance.status === 'present' : false,
-              absent: attendance ? attendance.status === 'absent' : !attendance,
-              late: attendance ? attendance.status === 'late' : false,
+              status, // Use "P", "L", or "" to match Excel
             };
           }),
         };
@@ -290,7 +296,7 @@ export const getAttendanceStatistics = asyncHandler(async (req: AuthRequest, res
         totalAttended,
         totalAbsent,
         totalLate,
-        totalSections, // Now represents totalAttended + totalLate
+        totalSections,
         attendancePercentage: attendancePercentage.toFixed(2),
         sectionAttendance,
       };

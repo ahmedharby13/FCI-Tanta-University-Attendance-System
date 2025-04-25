@@ -1339,3 +1339,147 @@
     at processTicksAndRejections (node:internal/process/task_queues:105:5)
 2025-04-20 23:01:47 error: Invalid or expired QR code: code=031d5b30-40d7-472d-ba26-bbc6acbfed49
 2025-04-20 23:01:47 error: Operational Error: Invalid or expired QR code, Status: 400
+2025-04-21 02:26:35 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+2025-04-21 02:26:56 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+2025-04-21 21:44:58 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-21 21:44:58 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-21 22:26:17 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-21 22:27:40 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-21 22:27:40 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-21 22:28:03 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-21 22:30:19 error: Student not in section: studentId=6803b693fc517f0846a4d64a, sectionId=680542f20b7d8e701bc7eb8d
+2025-04-21 22:30:19 error: Operational Error: This is not your assigned section, Status: 403
+2025-04-21 22:39:20 error: Operational Error: Class ID is required, Status: 400
+2025-04-21 22:39:53 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:40:21 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:41:47 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:44:30 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-21 22:44:30 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-21 22:44:35 error: Unexpected error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-21 22:44:49 error: Unexpected error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-21 22:45:26 error: Unexpected error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-21 22:50:43 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:50:57 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:53:41 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:54:41 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:55:41 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:56:41 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:57:41 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:58:41 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:59:41 error: Operational Error: Only Excel format is supported, Status: 400

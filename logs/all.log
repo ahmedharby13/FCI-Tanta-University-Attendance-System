@@ -2617,3 +2617,195 @@
 2025-04-21 01:21:23 info: Server running on port 3000
 2025-04-21 01:21:24 info: Database connected successfully
 2025-04-21 01:21:35 info: Attendance exported for classId=6805428a0b7d8e701bc7eb7f, sectionId=N/A, students=6, sections=2, days=3
+2025-04-21 02:24:33 info: Cleanup job scheduled to run daily at midnight
+2025-04-21 02:24:33 info: Server running on port 3000
+2025-04-21 02:24:34 info: Database connected successfully
+2025-04-21 02:26:35 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+2025-04-21 02:26:56 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+2025-04-21 21:16:07 info: Cleanup job scheduled to run daily at midnight
+2025-04-21 21:16:07 info: Server running on port 3000
+2025-04-21 21:16:08 info: Database connected successfully
+2025-04-21 21:44:41 info: Class created: classId=6806a029c456ead8f905b78b, name=SWE
+2025-04-21 21:44:58 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-21 21:44:58 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-21 21:45:04 info: Students added to class: classId=6806a029c456ead8f905b78b, studentIds=STU1234567, STU123456, STU12345, STU1234, STU123, 12345
+2025-04-21 22:26:17 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-21 22:27:17 info: QR Code generated: code=48750843-b7f2-4360-8250-5851e1162dfa, sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2, dayNumber=4, expiresAt=Mon Apr 21 2025 22:28:17 GMT+0200 (Eastern European Standard Time)
+2025-04-21 22:27:40 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-21 22:27:40 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-21 22:27:47 info: QR code interval cleared for sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2
+2025-04-21 22:27:47 info: Section closed: sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2, dayNumber=4
+2025-04-21 22:28:03 error: Unexpected error: Validation failed: Required, Stack: Error: Validation failed: Required
+    at L:\college sys v2\backend\middlewares\validate.ts:16:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\controllers\auth.ts:127:3
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-21 22:28:18 info: QR Code generated: code=cece3d6d-cb5e-43ec-b738-4e2db4618bdd, sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2, dayNumber=5, expiresAt=Mon Apr 21 2025 22:29:18 GMT+0200 (Eastern European Standard Time)
+2025-04-21 22:29:07 info: QR code interval cleared for sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2
+2025-04-21 22:29:07 info: Section closed: sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2, dayNumber=5
+2025-04-21 22:29:58 info: QR Code generated: code=63d09c40-0262-4e25-95cd-190c92e91321, sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2, dayNumber=6, expiresAt=Mon Apr 21 2025 22:30:58 GMT+0200 (Eastern European Standard Time)
+2025-04-21 22:30:19 info: Verifying QR code: code=63d09c40-0262-4e25-95cd-190c92e91321
+2025-04-21 22:30:19 error: Student not in section: studentId=6803b693fc517f0846a4d64a, sectionId=680542f20b7d8e701bc7eb8d
+2025-04-21 22:30:19 error: Operational Error: This is not your assigned section, Status: 403
+2025-04-21 22:30:58 info: QR Code generated: code=07c782fa-073c-4e40-923c-9ec8ff69e959, sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2, dayNumber=6, expiresAt=Mon Apr 21 2025 22:31:58 GMT+0200 (Eastern European Standard Time)
+2025-04-21 22:31:43 info: Verifying QR code: code=07c782fa-073c-4e40-923c-9ec8ff69e959
+2025-04-21 22:31:44 info: Attendance recorded: studentId=68039595d089baa99ace252e, code=07c782fa-073c-4e40-923c-9ec8ff69e959, dayNumber=6
+2025-04-21 22:31:58 info: QR Code generated: code=75cff41d-d0a8-4248-8598-d250d1224c45, sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2, dayNumber=6, expiresAt=Mon Apr 21 2025 22:32:58 GMT+0200 (Eastern European Standard Time)
+2025-04-21 22:32:03 info: QR code interval cleared for sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2
+2025-04-21 22:32:03 info: Section closed: sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2, dayNumber=6
+2025-04-21 22:39:20 error: Operational Error: Class ID is required, Status: 400
+2025-04-21 22:39:53 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:40:21 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:41:47 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:44:30 error: Token verification failed: TokenExpiredError: jwt expired
+2025-04-21 22:44:30 error: Unexpected error: Invalid token, Stack: Error: Invalid token
+    at L:\college sys v2\backend\middlewares\auth.ts:39:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (L:\college sys v2\backend\node_modules\router\lib\route.js:117:3)
+    at handle (L:\college sys v2\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at L:\college sys v2\backend\node_modules\router\index.js:295:15
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+    at next (L:\college sys v2\backend\node_modules\router\index.js:291:5)
+    at Function.handle (L:\college sys v2\backend\node_modules\router\index.js:186:3)
+    at router (L:\college sys v2\backend\node_modules\router\index.js:60:12)
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (L:\college sys v2\backend\node_modules\router\index.js:342:13)
+    at L:\college sys v2\backend\node_modules\router\index.js:297:9
+    at processParams (L:\college sys v2\backend\node_modules\router\index.js:582:12)
+2025-04-21 22:44:35 error: Unexpected error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-21 22:44:49 error: Unexpected error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-21 22:45:26 error: Unexpected error: Unauthorized access, Stack: Error: Unauthorized access
+    at L:\college sys v2\backend\controllers\auth.ts:125:11
+    at L:\college sys v2\backend\utils\asyncHandler.ts:11:21
+    at Layer.handleRequest (L:\college sys v2\backend\node_modules\router\lib\layer.js:152:17)
+    at next (L:\college sys v2\backend\node_modules\router\lib\route.js:157:13)
+    at L:\college sys v2\backend\middlewares\auth.ts:36:5
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-21 22:50:43 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:50:57 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:53:41 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:53:43 info: Attendance exported for classId=6805428a0b7d8e701bc7eb7f, sectionId=N/A, students=6, sections=2, days=6
+2025-04-21 22:54:41 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:55:41 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:56:41 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:57:41 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:58:41 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 22:59:41 error: Operational Error: Only Excel format is supported, Status: 400
+2025-04-21 23:04:45 info: Cleanup job scheduled to run daily at midnight
+2025-04-21 23:04:45 info: Server running on port 3000
+2025-04-21 23:04:46 info: Database connected successfully
+2025-04-21 23:07:13 info: Cleanup job scheduled to run daily at midnight
+2025-04-21 23:07:13 info: Server running on port 3000
+2025-04-21 23:07:14 info: Database connected successfully
+2025-04-21 23:07:36 info: Attendance exported for classId=6805428a0b7d8e701bc7eb7f, sectionId=N/A, students=6, sections=2, days=6
+2025-04-21 23:09:22 info: QR Code generated: code=6a8b1972-d3f1-481e-bdc4-e227017a4f7b, sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2, dayNumber=7, expiresAt=Mon Apr 21 2025 23:10:21 GMT+0200 (Eastern European Standard Time)
+2025-04-21 23:09:28 info: QR code interval cleared for sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2
+2025-04-21 23:09:28 info: Section closed: sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2, dayNumber=7
+2025-04-21 23:09:37 info: QR Code generated: code=2c1183ec-6537-4b91-8b76-9ec077ae6020, sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2, dayNumber=7, expiresAt=Mon Apr 21 2025 23:10:37 GMT+0200 (Eastern European Standard Time)
+2025-04-21 23:09:41 info: QR code interval cleared for sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2
+2025-04-21 23:09:41 info: Section closed: sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2, dayNumber=7
+2025-04-21 23:09:46 info: QR Code generated: code=7e18ea05-df0a-4594-aaa1-f1a31ec4e0f2, sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2, dayNumber=8, expiresAt=Mon Apr 21 2025 23:10:46 GMT+0200 (Eastern European Standard Time)
+2025-04-21 23:10:03 info: Verifying QR code: code=7e18ea05-df0a-4594-aaa1-f1a31ec4e0f2
+2025-04-21 23:10:04 info: Attendance recorded: studentId=68039595d089baa99ace252e, code=7e18ea05-df0a-4594-aaa1-f1a31ec4e0f2, dayNumber=8
+2025-04-21 23:10:13 info: QR code interval cleared for sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2
+2025-04-21 23:10:13 info: Section closed: sectionId=680542f20b7d8e701bc7eb8d, name=فتره 2, dayNumber=8
+2025-04-21 23:10:33 info: Attendance exported for classId=6805428a0b7d8e701bc7eb7f, sectionId=N/A, students=6, sections=2, days=8
+2025-04-21 23:11:35 info: Cleanup job scheduled to run daily at midnight
+2025-04-21 23:11:35 info: Server running on port 3000
+2025-04-21 23:11:36 info: Database connected successfully
+2025-04-21 23:14:12 info: Cleanup job scheduled to run daily at midnight
+2025-04-21 23:14:12 info: Server running on port 3000
+2025-04-21 23:14:13 info: Database connected successfully
