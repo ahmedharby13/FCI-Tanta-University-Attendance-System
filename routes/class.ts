@@ -3,7 +3,6 @@ import {
   createClass,
   addStudents,
   removeStudents,
-  updateClass,
   deleteClass,
   getMyClasses,
 } from '../controllers/class';
@@ -45,13 +44,13 @@ classRouter.delete(
   removeStudents
 );
 
-classRouter.patch(
-  '/update',
-  protect,
-  allowTo(UserRole.INSTRUCTOR, UserRole.ADMIN),
-  validate(updateClassSchema),
-  updateClass
-);
+// classRouter.patch(
+//   '/update',
+//   protect,
+//   allowTo(UserRole.INSTRUCTOR, UserRole.ADMIN),
+//   validate(updateClassSchema),
+//   updateClass
+// );
 
 classRouter.delete(
   '/delete',

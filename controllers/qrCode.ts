@@ -43,7 +43,7 @@ export const generateQRCode = asyncHandler(async (req: AuthRequest, res: Respons
 
   // Check if an interval is already running for this section
   if (qrCodeIntervals.has(sectionIdStr)) {
-    logger.info(`QR code generation already active for sectionId=${sectionIdStr}, name=${section.name}`);
+    logger.info(`QR code generation already active for sectionId=${sectionIdStr}, sectionNumber=${section.sectionNumber}`);
     const firstCode = await Code.findOne({ sectionId: section._id, isActive: true });
     if (firstCode) {
       const qrImage = await QRCode.toDataURL(
@@ -53,7 +53,7 @@ export const generateQRCode = asyncHandler(async (req: AuthRequest, res: Respons
         message: 'QR Code generation already active for this section',
         qrImage,
         sectionId: section._id,
-        sectionName: section.name,
+        sectionNumber: section.sectionNumber,
         codeId: firstCode._id,
         expiresAt: firstCode.expiresAt,
       });
@@ -84,7 +84,7 @@ export const generateQRCode = asyncHandler(async (req: AuthRequest, res: Respons
       isActive: true,
     });
 
-    logger.info(`QR Code generated: code=${uniqueCode}, sectionId=${sectionIdStr}, name=${section.name}, dayNumber=${dayNumber}, expiresAt=${expiresAt}`);
+    logger.info(`QR Code generated: code=${uniqueCode}, sectionId=${sectionIdStr}, sectionNumber=${section.sectionNumber}, dayNumber=${dayNumber}, expiresAt=${expiresAt}`);
     return code;
   };
 
@@ -96,7 +96,7 @@ export const generateQRCode = asyncHandler(async (req: AuthRequest, res: Respons
     if (!sectionInDB) {
       clearInterval(interval);
       qrCodeIntervals.delete(sectionIdStr);
-      logger.info(`Stopped QR code generation for sectionId=${sectionIdStr}, name=${section.name}`);
+      logger.info(`Stopped QR code generation for sectionId=${sectionIdStr}, sectionNumber=${section.sectionNumber}`);
       return;
     }
     await generateAndSaveQRCode();
@@ -112,7 +112,7 @@ export const generateQRCode = asyncHandler(async (req: AuthRequest, res: Respons
     message: 'QR Code generated and scheduled',
     qrImage,
     sectionId: section._id,
-    sectionName: section.name,
+    sectionNumber: section.sectionNumber,
     codeId: firstCode._id,
     expiresAt: firstCode.expiresAt,
   });
@@ -153,9 +153,9 @@ export const closeQRCode = asyncHandler(async (req: AuthRequest, res: Response) 
   if (interval) {
     clearInterval(interval);
     qrCodeIntervals.delete(sectionId.toString());
-    logger.info(`QR code interval cleared for sectionId=${sectionId}, name=${section.name}`);
+    logger.info(`QR code interval cleared for sectionId=${sectionId}, sectionNumber=${section.sectionNumber}`);
   }
 
-  logger.info(`Section closed: sectionId=${sectionId}, name=${section.name}, dayNumber=${dayNumber}`);
-  res.json({ message: `Section ${section.name} closed successfully for day ${dayNumber}` });
+  logger.info(`Section closed: sectionId=${sectionId}, sectionNumber=${section.sectionNumber}, dayNumber=${dayNumber}`);
+  res.json({ message: `Section ${section.sectionNumber} closed successfully for day ${dayNumber}` });
 });

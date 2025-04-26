@@ -1,10 +1,11 @@
+// Validation schemas for class-related endpoints
 import { z } from 'zod';
 import { isValidObjectId } from 'mongoose';
 
-const objectIdSchema = z.string().refine(
-  (value) => isValidObjectId(value),
-  { message: 'Invalid MongoDB ObjectId' }
-);
+const objectIdSchema = z
+  .string()
+  .nonempty('ID cannot be empty')
+  .refine((value) => isValidObjectId(value), { message: 'Invalid MongoDB ObjectId' });
 
 export const createClassSchema = z.object({
   body: z.object({
@@ -17,18 +18,14 @@ export const createClassSchema = z.object({
 export const addStudentsSchema = z.object({
   body: z.object({
     classId: objectIdSchema,
-    studentIds: z
-      .array(z.string().min(1, 'Student ID is required'))
-      .min(1, 'At least one student ID is required'),
+    studentIds: z.array(objectIdSchema).min(1, 'At least one student ID is required'),
   }),
 });
 
 export const removeStudentsSchema = z.object({
   body: z.object({
     classId: objectIdSchema,
-    studentIds: z
-      .array(z.string().min(1, 'Student ID is required'))
-      .min(1, 'At least one student ID is required'),
+    studentIds: z.array(objectIdSchema).min(1, 'At least one student ID is required'),
   }),
 });
 

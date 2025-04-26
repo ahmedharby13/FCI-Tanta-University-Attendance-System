@@ -85,17 +85,17 @@ export const login = asyncHandler(async (req: AuthRequest, res: Response) => {
   sendTokenResponse(user, 200, res);
 });
 
-export const updatePassword = asyncHandler(async (req: AuthRequest, res: Response) => {
-  const user = await User.findById(req.user!.id).select('+password');
-  if (!user || !(await user.comparePassword(req.body.currentPassword))) {
-    throw new Error('Current password is incorrect');
-  }
+// export const updatePassword = asyncHandler(async (req: AuthRequest, res: Response) => {
+//   const user = await User.findById(req.user!.id).select('+password');
+//   if (!user || !(await user.comparePassword(req.body.currentPassword))) {
+//     throw new Error('Current password is incorrect');
+//   }
 
-  user.password = req.body.newPassword;
-  await user.save();
+//   user.password = req.body.newPassword;
+//   await user.save();
 
-  sendTokenResponse(user, 200, res);
-});
+//   sendTokenResponse(user, 200, res);
+// });
 
 export const getMe = asyncHandler(async (req: AuthRequest, res: Response) => {
   const user = await User.findById(req.user!.id);

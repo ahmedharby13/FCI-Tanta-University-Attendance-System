@@ -6,6 +6,7 @@ import { asyncHandler } from '../utils/asyncHandler';
 import { AppError } from '../utils/appError';
 import { AuthRequest } from '../types/AuthRequest';
 import logger from '../utils/logger';
+import mongoose from 'mongoose';
 
 export const addStudentsToSection = asyncHandler(async (req: AuthRequest, res: Response) => {
   const { sectionId, studentIds } = req.body;
@@ -26,8 +27,10 @@ export const addStudentsToSection = asyncHandler(async (req: AuthRequest, res: R
     throw new AppError('You can only add students to sections in your own classes', 403);
   }
 
+  // Validate studentIds as ObjectIds and query by _id
+  const studentObjectIds = studentIds.map((id: string) => new mongoose.Types.ObjectId(id));
   const students = await User.find({
-    studentId: { $in: studentIds },
+    _id: { $in: studentObjectIds },
     role: UserRole.STUDENT,
   });
 
@@ -35,11 +38,9 @@ export const addStudentsToSection = asyncHandler(async (req: AuthRequest, res: R
     throw new AppError('Some students not found or are not valid students', 400);
   }
 
-  const studentObjectIds = students.map((student) => student._id);
-
   // Check if students are enrolled in the class
   const notEnrolled = studentObjectIds.filter(
-    (id) => !classDoc.students.some((s) => s.toString() === id.toString())
+    (id: { toString: () => string; }) => !classDoc.students.some((s) => s.toString() === id.toString())
   );
   if (notEnrolled.length > 0) {
     throw new AppError('Some students are not enrolled in this class', 403);
@@ -58,7 +59,7 @@ export const addStudentsToSection = asyncHandler(async (req: AuthRequest, res: R
           sec.students.some((id) => id.toString() === s._id.toString())
         )
       )
-      .map((s) => s.studentId);
+      .map((s) => s._id.toString());
     throw new AppError(
       `Students with IDs ${duplicateStudents.join(', ')} are already in other sections`,
       400
@@ -67,7 +68,7 @@ export const addStudentsToSection = asyncHandler(async (req: AuthRequest, res: R
 
   // Add new students to the section
   const newStudents = studentObjectIds.filter(
-    (id) => !section.students.some((existingId) => existingId.toString() === id.toString())
+    (id: { toString: () => string; }) => !section.students.some((existingId) => existingId.toString() === id.toString())
   );
   if (newStudents.length === 0) {
     throw new AppError('All provided students are already in this section', 400);
@@ -102,8 +103,10 @@ export const removeStudentsFromSection = asyncHandler(async (req: AuthRequest, r
     throw new AppError('You can only remove students from sections in your own classes', 403);
   }
 
+  // Validate studentIds as ObjectIds and query by _id
+  const studentObjectIds = studentIds.map((id: string) => new mongoose.Types.ObjectId(id));
   const students = await User.find({
-    studentId: { $in: studentIds },
+    _id: { $in: studentObjectIds },
     role: UserRole.STUDENT,
   });
 
@@ -111,9 +114,8 @@ export const removeStudentsFromSection = asyncHandler(async (req: AuthRequest, r
     throw new AppError('Some students not found or are not valid students', 400);
   }
 
-  const studentObjectIds = students.map((student) => student._id);
   section.students = section.students.filter(
-    (id) => !studentObjectIds.some((studentId) => studentId.toString() === id.toString())
+    (id) => !studentObjectIds.some((studentId: { toString: () => string; }) => studentId.toString() === id.toString())
   );
   await section.save();
 

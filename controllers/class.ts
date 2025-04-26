@@ -8,6 +8,7 @@ import { asyncHandler } from '../utils/asyncHandler';
 import { AppError } from '../utils/appError';
 import { AuthRequest } from '../types/AuthRequest';
 import logger from '../utils/logger';
+import mongoose from 'mongoose';
 
 export const createClass = asyncHandler(async (req: AuthRequest, res: Response) => {
   const { name, teacherId, semester } = req.body;
@@ -51,8 +52,10 @@ export const addStudents = asyncHandler(async (req: AuthRequest, res: Response) 
     throw new AppError('You can only add students to your own classes', 403);
   }
 
+  // Validate studentIds as ObjectIds and query by _id
+  const studentObjectIds = studentIds.map((id: string) => new mongoose.Types.ObjectId(id));
   const students = await User.find({
-    studentId: { $in: studentIds },
+    _id: { $in: studentObjectIds },
     role: UserRole.STUDENT,
   });
 
@@ -60,9 +63,9 @@ export const addStudents = asyncHandler(async (req: AuthRequest, res: Response) 
     throw new AppError('Some students not found or are not valid students', 400);
   }
 
-  const studentObjectIds = students.map((student) => student._id);
   const newStudents = studentObjectIds.filter(
-    (id) => !classDoc.students.some((existingId) => existingId.toString() === id.toString())
+    (id: mongoose.Types.ObjectId) =>
+      !classDoc.students.some((existingId) => existingId.toString() === id.toString())
   );
 
   if (newStudents.length === 0) {
@@ -93,8 +96,10 @@ export const removeStudents = asyncHandler(async (req: AuthRequest, res: Respons
     throw new AppError('You can only remove students from your own classes', 403);
   }
 
+  // Validate studentIds as ObjectIds and query by _id
+  const studentObjectIds = studentIds.map((id: string) => new mongoose.Types.ObjectId(id));
   const students = await User.find({
-    studentId: { $in: studentIds },
+    _id: { $in: studentObjectIds },
     role: UserRole.STUDENT,
   });
 
@@ -102,9 +107,11 @@ export const removeStudents = asyncHandler(async (req: AuthRequest, res: Respons
     throw new AppError('Some students not found or are not valid students', 400);
   }
 
-  const studentObjectIds = students.map((student) => student._id);
   classDoc.students = classDoc.students.filter(
-    (id) => !studentObjectIds.some((studentId) => studentId.toString() === id.toString())
+    (id: mongoose.Types.ObjectId) =>
+      !studentObjectIds.some(
+        (studentId: mongoose.Types.ObjectId) => studentId.toString() === id.toString()
+      )
   );
   await classDoc.save();
 
@@ -115,44 +122,44 @@ export const removeStudents = asyncHandler(async (req: AuthRequest, res: Respons
   });
 });
 
-export const updateClass = asyncHandler(async (req: AuthRequest, res: Response) => {
-  const { classId, name, teacherId, semester, status } = req.body;
-  const userId = req.user!.id;
-  const userRole = req.user!.role;
+// export const updateClass = asyncHandler(async (req: AuthRequest, res: Response) => {
+//   const { classId, name, teacherId, semester, status } = req.body;
+//   const userId = req.user!.id;
+//   const userRole = req.user!.role;
 
-  const classDoc = await Class.findById(classId);
-  if (!classDoc) {
-    throw new AppError('Class not found', 404);
-  }
+//   const classDoc = await Class.findById(classId);
+//   if (!classDoc) {
+//     throw new AppError('Class not found', 404);
+//   }
 
-  if (userRole !== UserRole.ADMIN && classDoc.teacherId.toString() !== userId) {
-    throw new AppError('You can only update your own classes', 403);
-  }
+//   if (userRole !== UserRole.ADMIN && classDoc.teacherId.toString() !== userId) {
+//     throw new AppError('You can only update your own classes', 403);
+//   }
 
-  if (teacherId && userRole !== UserRole.ADMIN) {
-    throw new AppError('Only admins can change the teacher', 403);
-  }
+//   if (teacherId && userRole !== UserRole.ADMIN) {
+//     throw new AppError('Only admins can change the teacher', 403);
+//   }
 
-  if (teacherId) {
-    const teacher = await User.findById(teacherId);
-    if (!teacher || teacher.role !== UserRole.INSTRUCTOR) {
-      throw new AppError('Invalid teacher ID or user is not an instructor', 400);
-    }
-    classDoc.teacherId = teacherId;
-  }
+//   if (teacherId) {
+//     const teacher = await User.findById(teacherId);
+//     if (!teacher || teacher.role !== UserRole.INSTRUCTOR) {
+//       throw new AppError('Invalid teacher ID or user is not an instructor', 400);
+//     }
+//     classDoc.teacherId = teacherId;
+//   }
 
-  if (name) classDoc.name = name;
-  if (semester) classDoc.semester = semester;
-  if (status) classDoc.status = status;
+//   if (name) classDoc.name = name;
+//   if (semester) classDoc.semester = semester;
+//   if (status) classDoc.status = status;
 
-  await classDoc.save();
+//   await classDoc.save();
 
-  logger.info(`Class updated: classId=${classId}`);
-  res.status(200).json({
-    message: 'Class updated successfully',
-    class: classDoc,
-  });
-});
+//   logger.info(`Class updated: classId=${classId}`);
+//   res.status(200).json({
+//     message: 'Class updated successfully',
+//     class: classDoc,
+//   });
+// });
 
 export const deleteClass = asyncHandler(async (req: AuthRequest, res: Response) => {
   const { classId } = req.body;

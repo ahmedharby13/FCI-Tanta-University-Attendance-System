@@ -1,8 +1,14 @@
 import { z } from 'zod';
+import { isValidObjectId } from 'mongoose';
+
+const objectIdSchema = z
+  .string()
+  .nonempty('ID cannot be empty')
+  .refine((value) => isValidObjectId(value), { message: 'Invalid MongoDB ObjectId' });
 
 export const generateQRSchema = z.object({
   body: z.object({
-    classId: z.string().nonempty('Class ID is required'),
+    classId: objectIdSchema,
     sectionNumber: z.number().min(1, 'Section number must be at least 1'),
     dayNumber: z.number().min(1, 'Day number must be at least 1'),
     location: z.object({
@@ -16,8 +22,8 @@ export const generateQRSchema = z.object({
 
 export const closeQRSchema = z.object({
   body: z.object({
-    sectionId: z.string().nonempty('Section ID is required'),
-    dayNumber: z.number().min(1, 'Day number must be at least 1'), // Added
+    sectionId: objectIdSchema,
+    dayNumber: z.number().min(1, 'Day number must be at least 1'),
   }),
 });
 
@@ -36,16 +42,16 @@ export const verifyQRSchema = z.object({
 
 export const getAttendanceSchema = z.object({
   query: z.object({
-    classId: z.string().optional(),
-    sectionId: z.string().optional(),
+    classId: objectIdSchema.optional(),
+    sectionId: objectIdSchema.optional(),
   }),
 });
 
 export const manualAttendanceSchema = z.object({
   body: z.object({
-    studentId: z.string().nonempty('Student ID is required'),
-    classId: z.string().nonempty('Class ID is required'),
-    sectionId: z.string().nonempty('Section ID is required'),
+    studentId: objectIdSchema,
+    classId: objectIdSchema,
+    sectionId: objectIdSchema,
     status: z.enum(['present', 'absent', 'late']),
     dayNumber: z.number().min(1, 'Day number must be at least 1'),
   }),
@@ -53,44 +59,44 @@ export const manualAttendanceSchema = z.object({
 
 export const getAttendanceStatisticsSchema = z.object({
   query: z.object({
-    classId: z.string().nonempty('Class ID is required'),
+    classId: objectIdSchema,
   }),
 });
 
 export const createSectionSchema = z.object({
   body: z.object({
-    classId: z.string().nonempty('Class ID is required'),
-    name: z.string().nonempty('Name is required'),
+    classId: objectIdSchema,
     sectionNumber: z.number().min(1, 'Section number must be at least 1'),
-    studentIds: z.array(z.string()).optional(),
+    dayNumber: z.number().min(1).optional(),
+    studentIds: z.array(objectIdSchema).optional(),
   }),
 });
 
 export const updateSectionSchema = z.object({
   body: z.object({
-    sectionId: z.string().nonempty('Section ID is required'),
-    name: z.string().optional(),
+    sectionId: objectIdSchema,
     sectionNumber: z.number().min(1).optional(),
-    studentIds: z.array(z.string()).optional(),
+    dayNumber: z.number().min(1).optional(),
+    studentIds: z.array(objectIdSchema).optional(),
   }),
 });
 
 export const deleteSectionSchema = z.object({
   body: z.object({
-    sectionId: z.string().nonempty('Section ID is required'),
+    sectionId: objectIdSchema,
   }),
 });
 
 export const addStudentsToSectionSchema = z.object({
   body: z.object({
-    sectionId: z.string().nonempty('Section ID is required'),
-    studentIds: z.array(z.string().nonempty('Student ID is required')).nonempty('At least one student ID is required'),
+    sectionId: objectIdSchema,
+    studentIds: z.array(objectIdSchema).min(1, 'At least one student ID is required'),
   }),
 });
 
 export const removeStudentsFromSectionSchema = z.object({
   body: z.object({
-    sectionId: z.string().nonempty('Section ID is required'),
-    studentIds: z.array(z.string().nonempty('Student ID is required')).nonempty('At least one student ID is required'),
+    sectionId: objectIdSchema,
+    studentIds: z.array(objectIdSchema).min(1, 'At least one student ID is required'),
   }),
 });

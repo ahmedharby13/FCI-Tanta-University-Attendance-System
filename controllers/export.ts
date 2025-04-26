@@ -24,15 +24,6 @@ interface ClassDocument extends Document {
   students: Student[];
 }
 
-interface SectionDocument extends Document {
-  _id: Types.ObjectId;
-  classId: Types.ObjectId;
-  name: string;
-  sectionNumber: number;
-  students?: Types.ObjectId[];
-  date: Date;
-}
-
 interface AttendanceDocument extends Document {
   _id: Types.ObjectId;
   classId: Types.ObjectId;
@@ -62,7 +53,7 @@ export const exportAttendance = asyncHandler(async (req: AuthRequest, res: Respo
   }
   const sections = await Section.find(sectionsQuery)
     .sort({ sectionNumber: 1 })
-    .exec() as SectionDocument[];
+    .exec();
   if (!sections.length) throw new AppError('No sections found for this class', 404);
 
   const sectionIds = sections.map((s) => s._id);

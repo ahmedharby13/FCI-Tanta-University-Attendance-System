@@ -7,7 +7,7 @@ import {
   getStudentAttendance,
 } from '../controllers/attendance';
 import { generateQRCode, closeQRCode } from '../controllers/qrCode';
-import { createSection, updateSection, deleteSection } from '../controllers/section';
+import { createSection,  deleteSection } from '../controllers/section';
 import { addStudentsToSection, removeStudentsFromSection } from '../controllers/studentSection';
 import { protect } from '../middlewares/auth';
 import { allowTo } from '../controllers/auth';
@@ -37,13 +37,13 @@ attendanceRouter.post(
   createSection
 );
 
-attendanceRouter.patch(
-  '/section/update',
-  protect,
-  allowTo(UserRole.INSTRUCTOR, UserRole.ADMIN),
-  validate(updateSectionSchema),
-  updateSection
-);
+// attendanceRouter.patch(
+//   '/section/update',
+//   protect,
+//   allowTo(UserRole.INSTRUCTOR, UserRole.ADMIN),
+//   validate(updateSectionSchema),
+//   updateSection
+// );
 
 attendanceRouter.delete(
   '/section/delete',

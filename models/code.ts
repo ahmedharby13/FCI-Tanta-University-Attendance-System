@@ -13,7 +13,7 @@ export interface ICode extends Document {
   sectionId: mongoose.Types.ObjectId;
   createdBy: mongoose.Types.ObjectId;
   isActive: boolean;
-  dayNumber: number; // Add dayNumber
+  dayNumber: number;
 }
 
 const codeSchema: Schema<ICode> = new Schema(

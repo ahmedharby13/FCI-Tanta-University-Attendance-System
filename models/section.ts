@@ -2,10 +2,10 @@ import mongoose, { Schema, Document } from 'mongoose';
 
 export interface ISection extends Document {
   classId: mongoose.Types.ObjectId;
-  name: string;
   sectionNumber: number;
   students: mongoose.Types.ObjectId[];
   date: Date;
+  dayNumber?: number;
 }
 
 const sectionSchema = new Schema<ISection>(
@@ -14,11 +14,6 @@ const sectionSchema = new Schema<ISection>(
       type: Schema.Types.ObjectId,
       ref: 'Class',
       required: true,
-    },
-    name: {
-      type: String,
-      required: true,
-      trim: true,
     },
     sectionNumber: {
       type: Number,
@@ -34,6 +29,10 @@ const sectionSchema = new Schema<ISection>(
       type: Date,
       required: true,
     },
+  dayNumber: {
+    type: Number,
+    required: false,
+  },
   },
   { timestamps: true }
 );
