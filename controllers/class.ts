@@ -38,6 +38,94 @@ export const createClass = asyncHandler(async (req: AuthRequest, res: Response) 
   });
 });
 
+export const deleteClass = asyncHandler(async (req: AuthRequest, res: Response) => {
+  const { classId } = req.body;
+  const userRole = req.user!.role;
+
+  if (userRole !== UserRole.ADMIN) {
+    throw new AppError('Only admins can delete classes', 403);
+  }
+
+  const classDoc = await Class.findById(classId);
+  if (!classDoc) {
+    throw new AppError('Class not found', 404);
+  }
+
+  await Section.deleteMany({ classId });
+  await Code.deleteMany({ classId });
+  await Attendance.deleteMany({ classId });
+
+  await classDoc.deleteOne();
+
+  logger.info(`Class deleted: classId=${classId}`);
+  res.status(200).json({
+    message: 'Class and related data deleted successfully',
+  });
+});
+
+export const getMyClasses = asyncHandler(async (req: AuthRequest, res: Response) => {
+  const userId = req.user!.id;
+  const userRole = req.user!.role;
+
+  let classes;
+
+  // Fetch classes based on user role
+  if (userRole === UserRole.INSTRUCTOR) {
+    classes = await Class.find({ teacherId: userId })
+      .populate('students', 'name email studentId')
+      .populate('sections', 'title _id'); 
+  } else if (userRole === UserRole.ADMIN) {
+    classes = await Class.find({})
+      .populate('students', 'name email studentId')
+      .populate('sections', 'title _id');
+  } else if (userRole === UserRole.STUDENT) {
+    classes = await Class.find({ students: userId })
+      .select('-students')
+      .populate('sections', 'title _id'); 
+  } else {
+    throw new AppError('Unauthorized', 403);
+  }
+
+  // For instructors and admins, include sectionCount
+  let classesWithSectionCount;
+  if (userRole === UserRole.INSTRUCTOR || userRole === UserRole.ADMIN) {
+    // Aggregate section counts for each class
+    const sectionCounts = await Section.aggregate([
+      {
+        $match: {
+          classId: { $in: classes.map((c: any) => c._id) },
+        },
+      },
+      {
+        $group: {
+          _id: '$classId',
+          sectionCount: { $sum: 1 },
+        },
+      },
+    ]);
+
+    // Create a map of classId to sectionCount
+    const sectionCountMap = new Map<string, number>();
+    sectionCounts.forEach((sc) => {
+      sectionCountMap.set(sc._id.toString(), sc.sectionCount);
+    });
+
+    // Enhance class data with sectionCount
+    classesWithSectionCount = classes.map((classDoc: any) => ({
+      ...classDoc.toObject(),
+      sectionCount: sectionCountMap.get(classDoc._id.toString()) || 0,
+    }));
+  } else {
+    // For students, return classes with sections but without sectionCount
+    classesWithSectionCount = classes.map((classDoc: any) => classDoc.toObject());
+  }
+
+  res.status(200).json({
+    success: true,
+    data: classesWithSectionCount,
+  });
+});
+
 export const addStudents = asyncHandler(async (req: AuthRequest, res: Response) => {
   const { classId, studentIds } = req.body;
   const userId = req.user!.id;
@@ -119,126 +207,5 @@ export const removeStudents = asyncHandler(async (req: AuthRequest, res: Respons
   res.status(200).json({
     message: 'Students removed successfully',
     class: classDoc,
-  });
-});
-
-// export const updateClass = asyncHandler(async (req: AuthRequest, res: Response) => {
-//   const { classId, name, teacherId, semester, status } = req.body;
-//   const userId = req.user!.id;
-//   const userRole = req.user!.role;
-
-//   const classDoc = await Class.findById(classId);
-//   if (!classDoc) {
-//     throw new AppError('Class not found', 404);
-//   }
-
-//   if (userRole !== UserRole.ADMIN && classDoc.teacherId.toString() !== userId) {
-//     throw new AppError('You can only update your own classes', 403);
-//   }
-
-//   if (teacherId && userRole !== UserRole.ADMIN) {
-//     throw new AppError('Only admins can change the teacher', 403);
-//   }
-
-//   if (teacherId) {
-//     const teacher = await User.findById(teacherId);
-//     if (!teacher || teacher.role !== UserRole.INSTRUCTOR) {
-//       throw new AppError('Invalid teacher ID or user is not an instructor', 400);
-//     }
-//     classDoc.teacherId = teacherId;
-//   }
-
-//   if (name) classDoc.name = name;
-//   if (semester) classDoc.semester = semester;
-//   if (status) classDoc.status = status;
-
-//   await classDoc.save();
-
-//   logger.info(`Class updated: classId=${classId}`);
-//   res.status(200).json({
-//     message: 'Class updated successfully',
-//     class: classDoc,
-//   });
-// });
-
-export const deleteClass = asyncHandler(async (req: AuthRequest, res: Response) => {
-  const { classId } = req.body;
-  const userRole = req.user!.role;
-
-  if (userRole !== UserRole.ADMIN) {
-    throw new AppError('Only admins can delete classes', 403);
-  }
-
-  const classDoc = await Class.findById(classId);
-  if (!classDoc) {
-    throw new AppError('Class not found', 404);
-  }
-
-  await Section.deleteMany({ classId });
-  await Code.deleteMany({ classId });
-  await Attendance.deleteMany({ classId });
-
-  await classDoc.deleteOne();
-
-  logger.info(`Class deleted: classId=${classId}`);
-  res.status(200).json({
-    message: 'Class and related data deleted successfully',
-  });
-});
-
-export const getMyClasses = asyncHandler(async (req: AuthRequest, res: Response) => {
-  const userId = req.user!.id;
-  const userRole = req.user!.role;
-
-  let classes;
-
-  // Fetch classes based on user role
-  if (userRole === UserRole.INSTRUCTOR) {
-    classes = await Class.find({ teacherId: userId }).populate('students', 'name email studentId');
-  } else if (userRole === UserRole.ADMIN) {
-    classes = await Class.find({}).populate('students', 'name email studentId');
-  } else if (userRole === UserRole.STUDENT) {
-    classes = await Class.find({ students: userId }).select('-students');
-  } else {
-    throw new AppError('Unauthorized', 403);
-  }
-
-  // For instructors and admins, include sectionCount
-  let classesWithSectionCount;
-  if (userRole === UserRole.INSTRUCTOR || userRole === UserRole.ADMIN) {
-    // Aggregate section counts for each class
-    const sectionCounts = await Section.aggregate([
-      {
-        $match: {
-          classId: { $in: classes.map((c: any) => c._id) },
-        },
-      },
-      {
-        $group: {
-          _id: '$classId',
-          sectionCount: { $sum: 1 },
-        },
-      },
-    ]);
-
-    // Create a map of classId to sectionCount
-    const sectionCountMap = new Map<string, number>();
-    sectionCounts.forEach((sc) => {
-      sectionCountMap.set(sc._id.toString(), sc.sectionCount);
-    });
-
-    // Enhance class data with sectionCount
-    classesWithSectionCount = classes.map((classDoc: any) => ({
-      ...classDoc.toObject(),
-      sectionCount: sectionCountMap.get(classDoc._id.toString()) || 0,
-    }));
-  } else {
-    // For students, return classes without sectionCount
-    classesWithSectionCount = classes.map((classDoc: any) => classDoc.toObject());
-  }
-
-  res.status(200).json({
-    success: true,
-    data: classesWithSectionCount,
   });
 });

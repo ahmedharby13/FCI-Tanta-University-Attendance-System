@@ -1,6 +1,4 @@
 import { Response } from 'express';
-import { getDistance } from 'geolib';
-import { Code } from '../models/code';
 import { Attendance } from '../models/attendance';
 import { Class } from '../models/class';
 import { Section } from '../models/section';

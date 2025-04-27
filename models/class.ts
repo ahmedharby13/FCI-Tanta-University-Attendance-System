@@ -8,6 +8,7 @@ export interface IClass extends Document {
   createdAt: Date;
   updatedAt: Date;
   students: mongoose.Types.ObjectId[];
+  sections: mongoose.Types.ObjectId[];
 }
 
 const classSchema = new Schema<IClass>(
@@ -36,6 +37,12 @@ const classSchema = new Schema<IClass>(
       {
         type: Schema.Types.ObjectId,
         ref: 'User',
+      },
+    ],
+    sections: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Section',
       },
     ],
   },

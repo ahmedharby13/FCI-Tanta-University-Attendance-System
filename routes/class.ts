@@ -14,7 +14,6 @@ import {
   createClassSchema,
   addStudentsSchema,
   removeStudentsSchema,
-  updateClassSchema,
   deleteClassSchema,
 } from '../validation/class';
 
@@ -43,14 +42,6 @@ classRouter.delete(
   validate(removeStudentsSchema),
   removeStudents
 );
-
-// classRouter.patch(
-//   '/update',
-//   protect,
-//   allowTo(UserRole.INSTRUCTOR, UserRole.ADMIN),
-//   validate(updateClassSchema),
-//   updateClass
-// );
 
 classRouter.delete(
   '/delete',

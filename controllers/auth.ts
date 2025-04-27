@@ -3,7 +3,26 @@ import jwt from 'jsonwebtoken';
 import { User, UserRole, IUser } from '../models/user';
 import { asyncHandler } from '../utils/asyncHandler';
 import logger from '../utils/logger';
+import { count } from 'console';
+import { Logger } from 'winston';
 
+const sendTokenResponse = (user: IUser, statusCode: number, res: Response) => {
+  const jwtSecret = process.env.JWT_SECRET;
+  const jwtExpire = process.env.JWT_EXPIRE || '1h';
+
+  if (!jwtSecret) {
+    console.error('Environment variable JWT_SECRET is missing');
+    throw new Error('Internal server error');
+  }
+
+  const token = jwt.sign(
+    { id: user._id.toString(), role: user.role },
+    jwtSecret,
+    { expiresIn: jwtExpire }
+  );
+
+  res.status(statusCode).json({ success: true, token, role: user.role, id: user._id });
+};
 interface AuthRequest extends Request {
   user?: IUser;
 }
@@ -85,40 +104,10 @@ export const login = asyncHandler(async (req: AuthRequest, res: Response) => {
   sendTokenResponse(user, 200, res);
 });
 
-// export const updatePassword = asyncHandler(async (req: AuthRequest, res: Response) => {
-//   const user = await User.findById(req.user!.id).select('+password');
-//   if (!user || !(await user.comparePassword(req.body.currentPassword))) {
-//     throw new Error('Current password is incorrect');
-//   }
-
-//   user.password = req.body.newPassword;
-//   await user.save();
-
-//   sendTokenResponse(user, 200, res);
-// });
-
 export const getMe = asyncHandler(async (req: AuthRequest, res: Response) => {
   const user = await User.findById(req.user!.id);
   res.json({ success: true, data: user });
 });
-
-const sendTokenResponse = (user: IUser, statusCode: number, res: Response) => {
-  const jwtSecret = process.env.JWT_SECRET;
-  const jwtExpire = process.env.JWT_EXPIRE || '1h';
-
-  if (!jwtSecret) {
-    console.error('Environment variable JWT_SECRET is missing');
-    throw new Error('Internal server error');
-  }
-
-  const token = jwt.sign(
-    { id: user._id.toString(), role: user.role },
-    jwtSecret,
-    { expiresIn: jwtExpire }
-  );
-
-  res.status(statusCode).json({ success: true, token, role: user.role, id: user._id });
-};
 
 export const allowTo = (...roles: UserRole[]) => asyncHandler(async (req: AuthRequest, res: Response, next: NextFunction) => {
   if (!req.user || !roles.includes(req.user.role)) {
@@ -126,3 +115,13 @@ export const allowTo = (...roles: UserRole[]) => asyncHandler(async (req: AuthRe
   }
   next();
 });
+
+export const getAllStudents = asyncHandler(async (req: AuthRequest, res: Response) => {
+  const students = await User.find({ role: UserRole.STUDENT }).select('-password');
+  res.status(200).json({
+     success: true,
+     count: students.length,
+      data: students 
+    });
+});
+
