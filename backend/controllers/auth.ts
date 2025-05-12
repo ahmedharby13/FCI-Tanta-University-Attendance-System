@@ -125,3 +125,11 @@ export const getAllStudents = asyncHandler(async (req: AuthRequest, res: Respons
     });
 });
 
+export const getAllInstructors = asyncHandler(async (req: AuthRequest, res: Response) => {
+  const instructors = await User.find({ role: UserRole.INSTRUCTOR }).select('-password');
+  res.status(200).json({
+    success: true,
+    count: instructors.length,
+    data: instructors,
+  });
+});

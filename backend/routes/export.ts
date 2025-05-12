@@ -8,13 +8,11 @@ import { exportAttendanceSchema } from '../validation/export';
 
 const exportRouter = Router();
 
-// exportRouter.get(
-//   '/',
-//   protect,
-//   allowTo(UserRole.INSTRUCTOR, UserRole.ADMIN),
-//   validate(exportAttendanceSchema),
-//   exportAttendance
-// );
-exportRouter.get('/',validate(exportAttendanceSchema), exportAttendance);
-// exportRouter.get('/', exportAttendance);
+exportRouter.get(
+  '/',
+  protect,
+  allowTo(UserRole.INSTRUCTOR, UserRole.ADMIN),
+  validate(exportAttendanceSchema),
+  exportAttendance
+);
 export default exportRouter;
