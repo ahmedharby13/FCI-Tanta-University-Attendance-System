@@ -2,7 +2,7 @@ import mongoose, { Schema, Document } from 'mongoose';
 
 export interface ISection extends Document {
   classId: mongoose.Types.ObjectId;
-  sectionNumber: number;
+  sectionNumber: string; // Changed from number to string
   students: mongoose.Types.ObjectId[];
   date: Date;
   dayNumber?: number;
@@ -16,7 +16,7 @@ const sectionSchema = new Schema<ISection>(
       required: true,
     },
     sectionNumber: {
-      type: Number,
+      type: String,
       required: true,
     },
     students: [
@@ -29,10 +29,10 @@ const sectionSchema = new Schema<ISection>(
       type: Date,
       required: true,
     },
-  dayNumber: {
-    type: Number,
-    required: false,
-  },
+    dayNumber: {
+      type: Number,
+      required: false,
+    },
   },
   { timestamps: true }
 );

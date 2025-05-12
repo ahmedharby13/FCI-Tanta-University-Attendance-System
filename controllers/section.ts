@@ -147,7 +147,7 @@ export const getMySections = asyncHandler(async (req: AuthRequest, res: Response
   // Transform sections to include className and relevant fields
   const sectionsWithDetails = sections.map((section: any) => ({
     _id: section._id,
-    sectionNumber: section.sectionNumber,
+    sectionNumber: section.sectionNumber, // This will now be a string
     classId: section.classId._id,
     className: section.classId.name,
     date: section.date,
@@ -201,7 +201,6 @@ export const addStudentsToSection = asyncHandler(async (req: AuthRequest, res: R
     throw new AppError('Some students are not enrolled in this class', 403);
   }
 
-  // Check if students are already in other sections
   const otherSections = await Section.find({
     classId: section.classId,
     _id: { $ne: sectionId },

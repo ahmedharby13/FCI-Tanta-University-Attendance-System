@@ -9,7 +9,7 @@ const objectIdSchema = z
 export const generateQRSchema = z.object({
       body: z.object({
         classId: objectIdSchema,
-        sectionNumber: z.number().min(1, 'Section number must be at least 1'),
+        sectionNumber: z.string(),
         dayNumber: z.number().min(1, 'Day number must be at least 1'),
         location: z.object({
           longitude: z.number(),
