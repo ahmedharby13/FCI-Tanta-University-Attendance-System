@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Zeyad-Hany-s-workspace-ndghif.us-east-1.xata.sh/db/absent-managment",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
