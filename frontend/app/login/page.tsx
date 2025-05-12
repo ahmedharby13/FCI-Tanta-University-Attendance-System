@@ -193,7 +193,7 @@ export default function Login() {
                   Register
                 </Link>
               </p> */}
-              {/* تبا لك يا زياد */}
+              {/* تبا لك يا زوز */}
             </CardFooter>
           </form>
         </Card>
