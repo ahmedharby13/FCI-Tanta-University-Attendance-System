@@ -100,7 +100,7 @@ cd FCI-Tanta-University-Attendance-System
 - **Frontend**:
   ```bash
   cd frontend
-  npm install
+  pnpm install
   ```
 
 ### 3. Set Up MongoDB
@@ -166,6 +166,8 @@ NEXT_PUBLIC_NETWORK_HOST=<backend URL, e.g., http://localhost:4000>
 - Start the development server:
   ```bash
   npm start
+  #or
+  pnpm run dev
   ```
 - The frontend will run on `http://localhost:4000` (or the port specified by Next.js).
 
