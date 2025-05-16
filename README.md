@@ -307,7 +307,8 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ## Contact
 
 - **Ahmed Harby** (Full-Stack Developer): [@ahmedharby13](https://github.com/ahmedharby13)
-- **Ziyad** (Frontend Developer): [@ZEHA-DEV](https://github.com/ZEHA-DEV)
+- **Zeyad Hany** (Frontend Developer): [@ZEHA-DEV](https://github.com/ZEHA-DEV)
+- **Mohammed Mansour** (BackEnd Developer): [@MohamedManosur]([https://github.com/ZEHA-DEV](https://github.com/MohamedManosur))
 - Project Link: [https://github.com/ahmedharby13/FCI-Tanta-University-Attendance-System](https://github.com/ahmedharby13/FCI-Tanta-University-Attendance-System)
 
 ## Acknowledgments
