@@ -11,6 +11,6 @@ authRouter.post('/register', validate(registerValidation), register);
 authRouter.post('/login', validate(loginValidation), login);
 authRouter.get('/me', protect, getMe);
 authRouter.get('/students', protect,allowTo(UserRole.ADMIN, UserRole.INSTRUCTOR), getAllStudents);
-authRouter.get('/instructors', protect,allowTo(UserRole.ADMIN, UserRole.INSTRUCTOR), getAllInstructors);
+authRouter.get('/instructor', protect,allowTo(UserRole.ADMIN, UserRole.INSTRUCTOR), getAllInstructors);
 
 export default authRouter;
